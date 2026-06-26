@@ -1,0 +1,1372 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Berpon Digital</title>
+    <meta name="description" content="Web portofolio tailwind" />
+    <meta name="keyword" content="tailwindcss, CSS, tailwind" />
+    <meta name="author" content="Berpon Digital" />
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <style>
+      :root {
+        --primary-dark: #0f172a;
+        --secondary-dark: #1e293b;
+        --accent-green: #10b981;
+        --accent-cyan: #06d6a6;
+      }
+
+      body {
+        background-color: var(--primary-dark);
+        color: white;
+      }
+
+      .gradient {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      }
+      .gradient-skill {
+        background-image: linear-gradient(90deg, #10b981, #06d6a6);
+      }
+      .gradient-bottom {
+        background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
+      }
+
+      /* Dark theme adjustments */
+      .nav-link {
+        color: #e2e8f0 !important;
+      }
+      .nav-link:hover {
+        color: #10b981 !important;
+      }
+
+      section {
+        background-color: var(--primary-dark) !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: white !important;
+      }
+
+      p,
+      span,
+      label {
+        color: #cbd5e1 !important;
+      }
+
+      .max-w-sm {
+        background-color: var(--secondary-dark) !important;
+        color: white !important;
+      }
+
+      .bg-white {
+        background-color: var(--secondary-dark) !important;
+        color: white !important;
+      }
+
+      .text-gray-600,
+      .text-gray-700 {
+        color: #cbd5e1 !important;
+      }
+
+      .bg-gray-200,
+      .bg-gray-100 {
+        background-color: var(--secondary-dark) !important;
+      }
+
+      button {
+        background-color: var(--accent-green) !important;
+        border-color: var(--accent-green) !important;
+      }
+
+      button:hover {
+        background-color: #059669 !important;
+        border-color: #059669 !important;
+      }
+
+      .text-blue-500 {
+        color: var(--accent-cyan) !important;
+      }
+
+      .text-red-500 {
+        color: #f87171 !important;
+      }
+
+      .text-green-500 {
+        color: #4ade80 !important;
+      }
+
+      .shadow-lg {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+      }
+
+      input,
+      textarea {
+        background-color: #334155 !important;
+        color: #f1f5f9 !important;
+        border-color: #475569 !important;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: #94a3b8 !important;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        border-color: #10b981 !important;
+      }
+
+      .text-green-700 {
+        color: var(--accent-cyan) !important;
+      }
+
+      .text-green-700:hover {
+        color: #3b82f6 !important;
+      }
+
+      .bg-\[\#f8faf8\] {
+        background-color: var(--secondary-dark) !important;
+      }
+    </style>
+    <title>Berpon Digital</title>
+  </head>
+  <body>
+    <!-- Sticky Navbar -->
+    <nav
+      class="sticky top-0 z-50 bg-slate-900 shadow-md border-b border-slate-700"
+    >
+      <div class="flex flex-wrap p-6 justify-between max-w-full mx-auto px-4">
+        <div class="flex shrink-0 mr-6">
+          <img
+            src="img/logo1.png"
+            alt="Berpon Digital"
+            class="h-12 w-auto mr-2"
+          />
+        </div>
+        <div class="flex items-center space-x-6">
+          <a
+            href="#about"
+            class="nav-link text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
+            data-i18n="navAbout"
+            >About</a
+          >
+          <a
+            href="#portofolio"
+            class="nav-link text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
+            data-i18n="navPortfolio"
+            >Portofolio</a
+          >
+          <a
+            href="#testimonials"
+            class="nav-link text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
+            data-i18n="navTestimonials"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="inline-block text-sm px-4 py-2 text-white bg-emerald-500 border border-transparent hover:bg-emerald-600 rounded-tr-lg rounded-full transition-colors font-bold"
+            data-i18n="navContact"
+            >Contact</a
+          >
+          <div
+            class="inline-flex items-center gap-2 border border-slate-700 rounded-full bg-slate-900/80 p-1"
+          >
+            <button
+              type="button"
+              class="lang-switch rounded-full px-3 py-1 text-sm font-semibold text-slate-100 bg-emerald-500"
+              data-lang="id"
+            >
+              ID
+            </button>
+            <button
+              type="button"
+              class="lang-switch rounded-full px-3 py-1 text-sm font-semibold text-slate-100"
+              data-lang="en"
+            >
+              EN
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      id="about"
+      class="scroll-mt-20 w-full py-16 gradient overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] items-center">
+          <div class="space-y-8">
+            <span
+              class="inline-flex items-center rounded-full bg-emerald-500/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.35em] text-emerald-300"
+              data-i18n="aboutBadge"
+            >
+              Tentang Kami
+            </span>
+            <h1
+              class="text-5xl md:text-6xl font-bold leading-tight tracking-tight"
+              data-i18n="heroTitle"
+            >
+              Mengembangkan&nbsp;<span
+                class="text-emerald-400"
+                data-i18n="heroTitleHighlight"
+                >solusi digital</span
+              >
+            </h1>
+            <p
+              class="max-w-2xl text-lg leading-8 text-slate-300"
+              data-i18n="heroDescription"
+            >
+              Menciptakan pengalaman digital yang bermakna melalui desain yang
+              matang dan solusi inovatif. Kami memadukan kreativitas dengan
+              strategi untuk menghidupkan merek dan menjangkau audiens secara
+              lebih dalam.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center rounded-full bg-emerald-500 px-8 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/20 hover:bg-emerald-600 transition"
+                data-i18n="heroCta1"
+              >
+                Konsultasi Gratis
+              </a>
+              <a
+                href="#portofolio"
+                class="inline-flex items-center justify-center rounded-full border border-slate-700 px-8 py-3 text-sm font-semibold text-slate-100 hover:bg-slate-800 transition"
+                data-i18n="heroCta2"
+              >
+                Portofolio
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="inline-flex items-center gap-2 rounded-full bg-slate-900/80 px-4 py-2 text-sm font-medium text-slate-100"
+                data-i18n="heroBadge1"
+              >
+                <i class="fab fa-whatsapp text-emerald-400"></i>
+                Chat via WhatsApp
+              </span>
+              <span
+                class="inline-flex items-center gap-2 rounded-full bg-slate-900/80 px-4 py-2 text-sm font-medium text-slate-100"
+                data-i18n="heroBadge2"
+              >
+                <i class="fas fa-check-circle text-emerald-400"></i>
+                Terpercaya oleh UMKM
+              </span>
+            </div>
+          </div>
+
+          <div class="relative">
+            <!-- Hero Image Slider -->
+            <div
+              class="relative overflow-hidden rounded-4xl border border-slate-700 shadow-2xl h-96"
+            >
+              <div
+                id="heroSlider"
+                class="flex transition-transform duration-500 ease-out h-full"
+              >
+                <!-- Slide 1 -->
+                <div class="w-full flex-shrink-0">
+                  <img
+                    src="img/ourlogo.png"
+                    alt="Berpon Digital Logo"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <!-- Slide 2 -->
+                <div class="w-full flex-shrink-0">
+                  <img
+                    src="img/inventory.png"
+                    alt="Inventory System"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <!-- Slide 3 -->
+                <div class="w-full flex-shrink-0">
+                  <img
+                    src="img/web expor.png"
+                    alt="Web Exporter"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <!-- Slide 4 -->
+                <div class="w-full flex-shrink-0">
+                  <img
+                    src="img/Tokooline.png"
+                    alt="Tokooline"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <!-- Slide 5 -->
+                <div class="w-full flex-shrink-0">
+                  <img
+                    src="img/Hidroponik.png"
+                    alt="Hidroponik Expert"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <!-- Navigation Dots -->
+              <div
+                id="heroDotsContainer"
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 flex justify-center gap-2"
+              >
+                <button
+                  class="hero-dot w-2 h-2 rounded-full bg-emerald-500 cursor-pointer transition-all"
+                  onclick="heroCurrentSlide(0)"
+                ></button>
+                <button
+                  class="hero-dot w-2 h-2 rounded-full bg-slate-400 cursor-pointer transition-all"
+                  onclick="heroCurrentSlide(1)"
+                ></button>
+                <button
+                  class="hero-dot w-2 h-2 rounded-full bg-slate-400 cursor-pointer transition-all"
+                  onclick="heroCurrentSlide(2)"
+                ></button>
+                <button
+                  class="hero-dot w-2 h-2 rounded-full bg-slate-400 cursor-pointer transition-all"
+                  onclick="heroCurrentSlide(3)"
+                ></button>
+                <button
+                  class="hero-dot w-2 h-2 rounded-full bg-slate-400 cursor-pointer transition-all"
+                  onclick="heroCurrentSlide(4)"
+                ></button>
+              </div>
+            </div>
+
+            <div
+              class="absolute top-6 left-6 rounded-3xl border border-emerald-500/20 bg-slate-900/90 p-4 shadow-xl backdrop-blur"
+            >
+              <div class="flex items-center gap-3 text-slate-100">
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500/10 text-emerald-400"
+                >
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <div>
+                  <p
+                    class="text-xs uppercase tracking-[0.35em] text-slate-400"
+                    data-i18n="cardBadge1"
+                  >
+                    Desain UI/UX
+                  </p>
+                  <p class="font-semibold" data-i18n="cardTitle1">
+                    Konsep Kreatif
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute bottom-8 right-6 rounded-3xl border border-emerald-500/20 bg-slate-900/90 p-4 shadow-xl backdrop-blur"
+            >
+              <div class="flex items-center gap-3 text-slate-100">
+                <div
+                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500/10 text-emerald-400"
+                >
+                  <i class="fas fa-code"></i>
+                </div>
+                <div>
+                  <p
+                    class="text-xs uppercase tracking-[0.35em] text-slate-400"
+                    data-i18n="cardBadge2"
+                  >
+                    Pengembangan Web
+                  </p>
+                  <p class="font-semibold" data-i18n="cardTitle2">
+                    Antarmuka Modern
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about me -->
+
+    <!-- section my recent work -->
+    <section
+      id="portofolio"
+      class="scroll-mt-20 container mx-auto px-4 py-12 bg-slate-950"
+    >
+      <div class="text-center mb-10">
+        <h1
+          class="w-full my-2 text-4xl md:text-5xl font-bold text-white"
+          data-i18n="portfolioTitle"
+        >
+          Portofolio
+        </h1>
+        <div class="mb-4 flex justify-center">
+          <div class="h-1 w-24 rounded-full bg-emerald-500"></div>
+        </div>
+        <p
+          class="text-base md:text-lg text-slate-400 max-w-2xl mx-auto"
+          data-i18n="portfolioDescription"
+        >
+          Berikut adalah beberapa proyek terbaru kami yang menunjukkan kualitas
+          desain dan teknis yang kami kerjakan.
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-stretch max-w-5xl mx-auto"
+      >
+        <a
+          href="project-detail.html?project=ming-motor"
+          class="group block h-full rounded-2xl border border-slate-700 bg-slate-900/95 shadow-2xl overflow-hidden transition duration-300 hover:-translate-y-1 hover:border-emerald-400 hover:ring-2 hover:ring-emerald-400/20 hover:shadow-emerald-500/20 min-h-[420px] flex flex-col"
+        >
+          <img
+            src="img/inventory.png"
+            alt="Proyek Ming Motor"
+            class="w-full h-72 object-cover"
+          />
+          <div class="p-4 flex flex-col gap-4">
+            <div>
+              <p
+                class="font-semibold text-lg md:text-xl text-white mb-2"
+                data-i18n="portfolioItem1Title"
+              >
+                Sistem Inventory
+              </p>
+              <p
+                class="text-slate-300 text-sm leading-6"
+                data-i18n="portfolioItem1Desc"
+              >
+                Sistem Inventory untuk memantau stok barang
+              </p>
+            </div>
+            <div
+              class="inline-flex w-full justify-center rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 transition-all duration-200 group-hover:bg-emerald-600"
+              data-i18n="detailButton"
+            >
+              Detail
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="project-detail.html?project=perpustakaan"
+          class="group block h-full rounded-2xl border border-slate-700 bg-slate-900/95 shadow-2xl overflow-hidden transition duration-300 hover:-translate-y-1 hover:border-emerald-400 hover:ring-2 hover:ring-emerald-400/20 hover:shadow-emerald-500/20 min-h-[420px] flex flex-col"
+        >
+          <img
+            src="img/web expor.png"
+            alt="Web Eksportir"
+            class="w-full h-72 object-cover"
+          />
+          <div class="p-4 flex flex-col gap-4">
+            <div>
+              <p
+                class="font-semibold text-lg md:text-xl text-white mb-2"
+                data-i18n="portfolioItem2Title"
+              >
+                Betel Nut Exporter
+              </p>
+              <p
+                class="text-slate-300 text-sm leading-6"
+                data-i18n="portfolioItem2Desc"
+              >
+                Website untuk perusahaan eksportir Betel Nut.
+              </p>
+            </div>
+            <div
+              class="inline-flex w-full justify-center rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 transition-all duration-200 group-hover:bg-emerald-600"
+              data-i18n="detailButton"
+            >
+              Detail
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="project-detail.html?project=keuangan"
+          class="group block h-full rounded-2xl border border-slate-700 bg-slate-900/95 shadow-2xl overflow-hidden transition duration-300 hover:-translate-y-1 hover:border-emerald-400 hover:ring-2 hover:ring-emerald-400/20 hover:shadow-emerald-500/20 min-h-[420px] flex flex-col"
+        >
+          <img
+            src="img/Tokooline.png"
+            alt="TokoOnline"
+            class="w-full h-72 object-cover"
+          />
+          <div class="p-4 flex flex-col gap-4">
+            <div>
+              <p
+                class="font-semibold text-lg md:text-xl text-white mb-2"
+                data-i18n="portfolioItem3Title"
+              >
+                Biak Dagang
+              </p>
+              <p
+                class="text-slate-300 text-sm leading-6"
+                data-i18n="portfolioItem3Desc"
+              >
+                Aplikasi E-commerce untuk toko online.
+              </p>
+            </div>
+            <div
+              class="inline-flex w-full justify-center rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 transition-all duration-200 group-hover:bg-emerald-600"
+              data-i18n="detailButton"
+            >
+              Detail
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="project-detail.html?project=asset"
+          class="group block h-full rounded-2xl border border-slate-700 bg-slate-900/95 shadow-2xl overflow-hidden transition duration-300 hover:-translate-y-1 hover:border-emerald-400 hover:ring-2 hover:ring-emerald-400/20 hover:shadow-emerald-500/20 min-h-[420px] flex flex-col"
+        >
+          <img
+            src="img/Hidroponik.png"
+            alt="Proyek Asset"
+            class="w-full h-72 object-cover"
+          />
+          <div class="p-4 flex flex-col gap-4">
+            <div>
+              <p
+                class="font-semibold text-lg md:text-xl text-white mb-2"
+                data-i18n="portfolioItem4Title"
+              >
+                Hidroponik Expert
+              </p>
+              <p
+                class="text-slate-300 text-sm leading-6"
+                data-i18n="portfolioItem4Desc"
+              >
+                Aplikasi untuk memantau pertumbuhan tanaman hidroponik.
+              </p>
+            </div>
+            <div
+              class="inline-flex w-full justify-center rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 transition-all duration-200 group-hover:bg-emerald-600"
+              data-i18n="detailButton"
+            >
+              Detail
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- end my recent work -->
+
+    <!-- section testimonials -->
+    <section
+      id="testimonials"
+      class="scroll-mt-20 w-full py-16 gradient-bottom"
+    >
+      <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="text-center mb-12">
+          <h1
+            class="text-5xl font-bold text-white mb-4"
+            data-i18n="testimonialsTitle"
+          >
+            Testimonials
+          </h1>
+          <div class="h-1 w-24 rounded-full bg-emerald-500 mx-auto"></div>
+          <p
+            class="mt-6 text-lg text-slate-300"
+            data-i18n="testimonialsDescription"
+          >
+            Apa kata klien kami tentang layanan kami
+          </p>
+        </div>
+
+        <!-- Testimonials Slider -->
+        <div class="relative w-full max-w-4xl mx-auto px-4">
+          <!-- Slider Container -->
+          <div class="overflow-hidden rounded-2xl">
+            <div
+              id="testimonialSlider"
+              class="flex transition-transform duration-500 ease-out"
+            >
+              <!-- Testimonial 1 -->
+              <div class="w-full flex-shrink-0 px-2 md:px-4">
+                <div
+                  class="bg-slate-900/50 rounded-2xl border border-slate-700 p-6 hover:border-emerald-500/50 transition-all h-full"
+                >
+                  <div class="flex items-start gap-4 mb-4">
+                    <img
+                      id="img-0"
+                      src=""
+                      alt="Klien"
+                      class="w-16 h-16 rounded-full object-cover border-2 border-emerald-500"
+                      style="display: none"
+                    />
+                    <div
+                      id="placeholder-0"
+                      class="w-16 h-16 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                      <div
+                        class="flex items-center gap-1 text-emerald-400 mb-2"
+                      >
+                        <i class="fas fa-star text-sm"></i>
+                        <i class="fas fa-star text-sm"></i>
+                        <i class="fas fa-star text-sm"></i>
+                        <i class="fas fa-star text-sm"></i>
+                        <i class="fas fa-star text-sm"></i>
+                      </div>
+                      <p id="name-0" class="text-white font-semibold text-sm">
+                        Dirut Ganda Express
+                      </p>
+                      <p id="company-0" class="text-slate-400 text-xs">
+                        PT. Ganda Express
+                      </p>
+                    </div>
+                  </div>
+                  <p id="text-0" class="text-slate-300 text-sm leading-6">
+                    "Sistem yang dibangun Berpon Digital sangat membantu dalam
+                    mengelola operasional perusahaan kami. Respons tim yang
+                    cepat dan solusi yang tepat sasaran membuat implementasi
+                    berjalan lancar. Sangat puas dengan layanan mereka!"
+                  </p>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="w-full flex-shrink-0 px-2 md:px-4">
+                <div
+                  class="bg-slate-900/50 rounded-2xl border border-slate-700 p-6 hover:border-emerald-500/50 transition-all h-full"
+                >
+                  <div class="flex items-start gap-4 mb-4">
+                    <img
+                      id="img-1"
+                      src=""
+                      alt="Klien"
+                      class="w-16 h-16 rounded-full object-cover border-2 border-emerald-500"
+                      style="display: none"
+                    />
+                    <div
+                      id="placeholder-1"
+                      class="w-16 h-16 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                      <div
+                        class="flex items-center gap-1 text-emerald-400 mb-2"
+                      >
+                        <i class="fas fa-star text-sm"></i>
+                        <i class="fas fa-star text-sm"></i>
+                        <i class="fas fa-star text-sm"></i>
+                        <i class="fas fa-star text-sm"></i>
+                        <i class="fas fa-star text-sm"></i>
+                      </div>
+                      <p id="name-1" class="text-white font-semibold text-sm">
+                        Manajer Operasional Betel Nut
+                      </p>
+                      <p id="company-1" class="text-slate-400 text-xs">
+                        PT. Betel Nut Exporter
+                      </p>
+                    </div>
+                  </div>
+                  <p id="text-1" class="text-slate-300 text-sm leading-6">
+                    "Platform yang dikembangkan Berpon Digital telah
+                    meningkatkan efisiensi kami dalam mengelola ekspor. Desain
+                    yang user-friendly dan integrasi yang seamless membuat tim
+                    kami dapat fokus pada bisnis core. Rekomendasi terbaik untuk
+                    partner digital!"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Dots -->
+          <div id="dotsContainer" class="flex justify-center gap-2 mt-6">
+            <button
+              class="slider-dot w-3 h-3 rounded-full bg-emerald-500 cursor-pointer transition-all"
+              onclick="currentSlide(0)"
+            ></button>
+            <button
+              class="slider-dot w-3 h-3 rounded-full bg-slate-600 cursor-pointer transition-all"
+              onclick="currentSlide(1)"
+            ></button>
+          </div>
+
+          <!-- Previous/Next Buttons -->
+          <button
+            onclick="changeSlide(-1)"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-emerald-500 hover:bg-emerald-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors -translate-x-12 md:-translate-x-16 hidden md:flex"
+          >
+            <i class="fas fa-chevron-left text-sm"></i>
+          </button>
+          <button
+            onclick="changeSlide(1)"
+            class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-emerald-500 hover:bg-emerald-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors translate-x-12 md:translate-x-16 hidden md:flex"
+          >
+            <i class="fas fa-chevron-right text-sm"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonials -->
+
+    <!-- contact -->
+    <section id="contact" class="scroll-mt-20 w-full py-20 gradient-bottom">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-center mb-10">
+          <h1
+            class="text-5xl font-bold text-white mb-4"
+            data-i18n="contactTitle"
+          >
+            Kontak Kami
+          </h1>
+        </div>
+
+        <div
+          class="grid grid-cols-1 xl:grid-cols-[0.9fr_1.1fr] gap-16 items-center"
+        >
+          <div class="space-y-10">
+            <div>
+              <h2
+                class="text-xl font-semibold text-white mb-3"
+                data-i18n="contactPhoneTitle"
+              >
+                Nomor Telepon
+              </h2>
+              <p
+                class="text-slate-300 leading-7 mb-5"
+                data-i18n="contactPhoneDesc"
+              >
+                Anda dapat menghubungi kami selama 24/7 melalui WhatsApp dibawah
+                ini, dapatkan konsultasi gratis bersama Berpon Digital.
+              </p>
+              <div class="flex items-center gap-4 text-slate-100">
+                <span
+                  class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-lime-300 bg-lime-500/10 text-lime-300"
+                >
+                  <i class="fab fa-whatsapp text-xl"></i>
+                </span>
+                <span class="text-lg font-semibold">+62-81344004046</span>
+              </div>
+            </div>
+
+            <div>
+              <h2
+                class="text-xl font-semibold text-white mb-3"
+                data-i18n="contactEmailTitle"
+              >
+                Alamat Email
+              </h2>
+              <p
+                class="text-slate-300 leading-7 mb-5"
+                data-i18n="contactEmailDesc"
+              >
+                Anda dapat menghubungi kami melalui alamat email yang tertara
+                dibawah ini, dapatkan konsultasi gratis bersama Berpon Digital.
+              </p>
+              <div class="flex items-center gap-4 text-slate-100">
+                <span
+                  class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-lime-300 bg-lime-500/10 text-lime-300"
+                >
+                  <i class="fas fa-envelope text-lg"></i>
+                </span>
+                <span class="text-lg font-semibold"
+                  >berpon.digital@gmail.com</span
+                >
+              </div>
+            </div>
+
+            <div>
+              <h2
+                class="text-xl font-semibold text-white mb-3"
+                data-i18n="contactInstagramTitle"
+              >
+                Instagram
+              </h2>
+              <p
+                class="text-slate-300 leading-7 mb-5"
+                data-i18n="contactInstagramDesc"
+              >
+                Anda dapat menghubungi kami melalui Instagram yang tertara
+                dibawah ini, dapatkan konsultasi gratis bersama Berpon Digital.
+              </p>
+              <div class="flex items-center gap-4 text-slate-100">
+                <span
+                  class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-lime-300 bg-lime-500/10 text-lime-300"
+                >
+                  <i class="fab fa-instagram text-lg"></i>
+                </span>
+                <span class="text-lg font-semibold">berpon.digital</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text-center rounded-4xl border border-slate-700 bg-slate-900/95 p-10 shadow-2xl"
+          >
+            <div class="space-y-6">
+              <div>
+                <h1
+                  class="text-4xl md:text-2xl font-extralight text-white leading-tight"
+                  data-i18n="contactHeroTitle"
+                >
+                  Optimasi bisnis anda melalui
+                </h1>
+                <p
+                  class="text-4xl md:text-4xl font-black text-lime-300 leading-tight mt-2 uppercase tracking-wide"
+                  data-i18n="contactHeroBrand"
+                >
+                  Berpon Digital.
+                </p>
+                <p
+                  class="mt-4 text-slate-400 text-sm tracking-[0.2em] uppercase"
+                  data-i18n="contactHeroSubtitle"
+                >
+                  After Sales Support
+                </p>
+              </div>
+
+              <form class="space-y-6">
+                <div>
+                  <label class="sr-only" for="name" data-i18n="contactNameLabel"
+                    >Nama</label
+                  >
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Masukkan Nama Anda"
+                    data-i18n-placeholder="contactNamePlaceholder"
+                    class="w-full rounded-3xl border border-slate-700 bg-white px-5 py-4 text-slate-950 placeholder:text-slate-500 shadow-sm focus:border-emerald-500 focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="sr-only"
+                    for="email"
+                    data-i18n="contactEmailLabel"
+                    >Email</label
+                  >
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="Masukkan Email Anda"
+                    data-i18n-placeholder="contactEmailPlaceholder"
+                    class="w-full rounded-3xl border border-slate-700 bg-white px-5 py-4 text-slate-950 placeholder:text-slate-500 shadow-sm focus:border-emerald-500 focus:outline-none"
+                  />
+                </div>
+                <p class="text-slate-400 leading-7" data-i18n="contactFormNote">
+                  Anda dapat mengisi formulir ini dan tim kami akan menghubungi
+                  Anda, atau hubungi kami langsung melalui WhatsApp atau
+                  telepon.
+                </p>
+                <button
+                  type="button"
+                  onclick="
+                    window.open(
+                      'https://wa.me/6281344004046?text=Halo%20Berpon%20Digital%2C%20saya%20ingin%20konsultasi%20tentang%20bisnis%20saya.',
+                      '_blank',
+                    )
+                  "
+                  class="inline-flex w-full items-center justify-center gap-3 rounded-3xl border border-white/20 bg-slate-950/80 px-6 py-4 text-base font-semibold text-white shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-500 hover:text-slate-950"
+                  data-i18n="contactButton"
+                >
+                  Hubungi Kami Sekarang
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact -->
+
+    <a
+      href="https://wa.me/6281344004046?text=Halo%20Berpon%20Digital%2C%20saya%20ingin%20konsultasi."
+      target="_blank"
+      class="fixed right-6 bottom-6 z-50 inline-flex h-16 w-16 items-center justify-center rounded-full bg-emerald-500 text-white shadow-2xl shadow-emerald-500/30 transition hover:bg-emerald-400"
+      aria-label="Hubungi via WhatsApp"
+    >
+      <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- footer -->
+    <section id="footer" class="w-full py-4 mt-10 mb-10 text-[#1d532d]">
+      <div class="text-center">
+        <a
+          href="https://wa.me/6281344004046"
+          target="_blank"
+          class="text-green-700 hover:text-green-500 p-2 m-3"
+          title="Chat via WhatsApp"
+        >
+          <i class="fa-2x fab fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/berpon.digital"
+          target="_blank"
+          class="text-green-700 hover:text-green-500 p-2 m-3"
+          title="Follow Instagram"
+        >
+          <i class="fa-2x fab fa-instagram"></i>
+        </a>
+        <a
+          href="mailto:berpon.digital@gmail.com"
+          class="text-green-700 hover:text-green-500 p-2 m-3"
+          title="Kirim Email"
+        >
+          <i class="fa-2x fas fa-envelope"></i>
+        </a>
+      </div>
+      <div class="text-center mt-4 text-gray-600">
+        © 2026 Berpon Digital. All rights reserved.
+      </div>
+    </section>
+    <!-- end footer -->
+
+    <script>
+      // Active section detection
+      const navLinks = document.querySelectorAll(".nav-link");
+      const sections = document.querySelectorAll("section[id]");
+      const langButtons = document.querySelectorAll(".lang-switch");
+      const i18nElements = document.querySelectorAll("[data-i18n]");
+      const placeholderElements = document.querySelectorAll(
+        "[data-i18n-placeholder]",
+      );
+
+      const translations = {
+        id: {
+          navAbout: "Tentang",
+          navPortfolio: "Portofolio",
+          navTestimonials: "Testimonials",
+          navPricing: "Pricelist",
+          navContact: "Kontak",
+          aboutBadge: "Tentang Kami",
+          heroTitle: "Solusi Digital Inovatif",
+          heroTitleHighlight: "solusi digital",
+          heroDescription:
+            "Menciptakan pengalaman digital yang bermakna melalui desain yang matang dan solusi inovatif. Kami memadukan kreativitas dengan strategi untuk menghidupkan merek dan menjangkau audiens secara lebih dalam.",
+          heroCta1: "Konsultasi Gratis",
+          heroCta2: "Portofolio",
+          heroBadge1: "Chat via WhatsApp",
+          heroBadge2: "Terpercaya oleh UMKM",
+          cardBadge1: "Desain UI/UX",
+          cardTitle1: "Konsep Kreatif",
+          cardBadge2: "Pengembangan Web",
+          cardTitle2: "Antarmuka Modern",
+          portfolioItem1Title: "Sistem Inventory",
+          portfolioItem1Desc: "Sistem Inventory untuk memantau stok barang",
+          portfolioItem2Title: "Betel Nut Exporter",
+          portfolioItem2Desc: "Website untuk perusahaan eksportir Betel Nut.",
+          portfolioItem3Title: "Biak Dagang",
+          portfolioItem3Desc: "Aplikasi E-commerce untuk toko online.",
+          portfolioItem4Title: "Hidroponik Expert",
+          portfolioItem4Desc:
+            "Aplikasi untuk memantau pertumbuhan tanaman hidroponik.",
+          detailButton: "Detail",
+          portfolioTitle: "Portofolio",
+          portfolioDescription:
+            "Berikut adalah beberapa proyek terbaru kami yang menunjukkan kualitas desain dan teknis yang kami kerjakan.",
+          testimonialsTitle: "Testimonials",
+          testimonialsDescription: "Apa kata klien kami tentang layanan kami",
+          pricingTitle: "Pricelist",
+          pricingDescription:
+            "Pilih paket yang sesuai dengan kebutuhan bisnis Anda",
+          starterBadge: "30% OFF",
+          starterTitle: "Starter",
+          starterDescription:
+            "Sempurna untuk usaha baru, personal branding, atau memulai kehadiran online Anda",
+          pricingNote:
+            "* Harga dapat bervariasi sesuai kebutuhan spesifik Anda",
+          starterFeature1: "Responsive web design (Desktop dan Mobile)",
+          starterFeature2: "1 Landing Page",
+          starterFeature3: "Basic SEO setup",
+          starterFeature4: "Free website security (SSL)",
+          starterFeature5: "Free 14-day maintenance",
+          starterFeature6: "Free hosting and domain for 6 months",
+          starterFeature7: "1-time revision",
+          pricingButton: "Hubungi Kami",
+          businessBadge: "🔥 Best Offers",
+          businessDiscount: "45% OFF",
+          businessTitle: "Business",
+          businessDescription:
+            "Ideal untuk usaha yang sudah berjalan dan ingin meningkatkan kredibilitas serta menarik lebih banyak pelanggan",
+          businessFeature1: "Semua fitur di Starter",
+          businessFeature2: "Portfolio gallery dan testimonial",
+          businessFeature3: "3-4 Pages (About, Contact, Service, Portfolio)",
+          businessFeature4: "Free 30-day maintenance",
+          businessFeature5: "Premium design dengan high-converting CTA buttons",
+          businessFeature6: "On-page SEO untuk setiap halaman",
+          businessFeature7: "3-time revisions",
+          allInOneBadge: "50% OFF",
+          allInOneTitle: "All-in-One",
+          allInOneDescription:
+            "Terbaik untuk bisnis yang membutuhkan fitur booking, online sales, dan internal systems",
+          allInOneFeature1: "Semua fitur di Business",
+          allInOneFeature2:
+            "6-8 Pages (Career, Articles, Cart, Custom Requests)",
+          allInOneFeature3: "Custom scroll animations",
+          allInOneFeature4:
+            "Booking forms, calendars, dan payment gateway integration",
+          allInOneFeature5: "Free 60-day maintenance",
+          allInOneFeature6: "Product catalog untuk up to 50 items",
+          allInOneFeature7: "5-time revisions",
+          contactTitle: "Kontak Kami",
+          contactPhoneTitle: "Nomor Telepon",
+          contactPhoneDesc:
+            "Anda dapat menghubungi kami selama 24/7 melalui WhatsApp dibawah ini, dapatkan konsultasi gratis bersama Berpon Digital.",
+          contactEmailTitle: "Alamat Email",
+          contactEmailDesc:
+            "Anda dapat menghubungi kami melalui alamat email yang tertara dibawah ini, dapatkan konsultasi gratis bersama Berpon Digital.",
+          contactInstagramTitle: "Instagram",
+          contactInstagramDesc:
+            "Anda dapat menghubungi kami melalui Instagram yang tertara dibawah ini, dapatkan konsultasi gratis bersama Berpon Digital.",
+          contactHeroTitle: "Optimasi bisnis anda melalui",
+          contactHeroBrand: "Berpon Digital.",
+          contactHeroSubtitle: "After Sales Support",
+          contactNameLabel: "Nama",
+          contactNamePlaceholder: "Masukkan Nama Anda",
+          contactEmailLabel: "Email",
+          contactEmailPlaceholder: "Masukkan Email Anda",
+          contactFormNote:
+            "Anda dapat mengisi formulir ini dan tim kami akan menghubungi Anda, atau hubungi kami langsung melalui WhatsApp atau telepon.",
+          contactButton: "Hubungi Kami Sekarang",
+        },
+        en: {
+          navAbout: "About",
+          navPortfolio: "Portfolio",
+          navTestimonials: "Testimonials",
+          navPricing: "Pricing",
+          navContact: "Contact",
+          aboutBadge: "About Us",
+          heroTitle: "Digital Innovative Solutions",
+          heroTitleHighlight: "Software Development",
+          heroDescription:
+            "Crafting meaningful digital experiences through thoughtful design and innovative solutions. We blend creativity with strategy to bring brands to life and connect with audiences on a deeper level.",
+          heroCta1: "Free Consultation",
+          heroCta2: "Portfolio",
+          heroBadge1: "Chat via WhatsApp",
+          heroBadge2: "Trusted by UMKM",
+          cardBadge1: "UI/UX Design",
+          cardTitle1: "Creative Concepts",
+          cardBadge2: "Web Development",
+          cardTitle2: "Modern Interfaces",
+          portfolioItem1Title: "Inventory System",
+          portfolioItem1Desc:
+            "An inventory system to monitor stock items efficiently.",
+          portfolioItem2Title: "Betel Nut Exporter",
+          portfolioItem2Desc: "A website for betel nut exporting companies.",
+          portfolioItem3Title: "Biak Dagang",
+          portfolioItem3Desc: "An e-commerce application for online stores.",
+          portfolioItem4Title: "Hydroponics Expert",
+          portfolioItem4Desc:
+            "An application to monitor hydroponic plant growth.",
+          detailButton: "Details",
+          portfolioTitle: "Portfolio",
+          portfolioDescription:
+            "Here are some of our latest projects that show the quality of design and technical work we deliver.",
+          testimonialsTitle: "Testimonials",
+          testimonialsDescription: "What our clients say about our service",
+          pricingTitle: "Pricing",
+          pricingDescription:
+            "Choose the package that fits your business needs",
+          starterBadge: "30% OFF",
+          starterTitle: "Starter",
+          starterDescription:
+            "Perfect for new businesses, personal branding, or launching your online presence.",
+          pricingNote:
+            "* Prices may vary based on your specific business needs.",
+          starterFeature1: "Responsive web design (Desktop and Mobile)",
+          starterFeature2: "1 Landing Page",
+          starterFeature3: "Basic SEO setup",
+          starterFeature4: "Free website security (SSL)",
+          starterFeature5: "Free 14-day maintenance",
+          starterFeature6: "Free hosting and domain for 6 months",
+          starterFeature7: "1-time revision",
+          pricingButton: "Contact Us",
+          businessBadge: "🔥 Best Offers",
+          businessDiscount: "45% OFF",
+          businessTitle: "Business",
+          businessDescription:
+            "Ideal for established businesses looking to increase credibility and attract more customers.",
+          businessFeature1: "Everything in Starter",
+          businessFeature2: "Portfolio gallery and testimonials",
+          businessFeature3: "3-4 Pages (About, Contact, Service, Portfolio)",
+          businessFeature4: "Free 30-day maintenance",
+          businessFeature5: "Premium design with high-converting CTA buttons",
+          businessFeature6: "On-page SEO for every page",
+          businessFeature7: "3-time revisions",
+          allInOneBadge: "50% OFF",
+          allInOneTitle: "All-in-One",
+          allInOneDescription:
+            "Best for businesses requiring booking features, online sales, and internal systems.",
+          allInOneFeature1: "Everything in Business",
+          allInOneFeature2:
+            "6-8 Pages (Career, Articles, Cart, Custom Requests)",
+          allInOneFeature3: "Custom scroll animations",
+          allInOneFeature4:
+            "Booking forms, calendars, and payment gateway integration",
+          allInOneFeature5: "Free 60-day maintenance",
+          allInOneFeature6: "Product catalog for up to 50 items",
+          allInOneFeature7: "5-time revisions",
+          contactTitle: "Contact Us",
+          contactPhoneTitle: "Phone Number",
+          contactPhoneDesc:
+            "You can reach us 24/7 via WhatsApp below and get a free consultation with Berpon Digital.",
+          contactEmailTitle: "Email Address",
+          contactEmailDesc:
+            "You can reach us via the email address below and get a free consultation with Berpon Digital.",
+          contactInstagramTitle: "Instagram",
+          contactInstagramDesc:
+            "You can reach us via the Instagram account below and get a free consultation with Berpon Digital.",
+          contactHeroTitle: "Optimize your business with",
+          contactHeroBrand: "Berpon Digital.",
+          contactHeroSubtitle: "After Sales Support",
+          contactNameLabel: "Name",
+          contactNamePlaceholder: "Enter Your Name",
+          contactEmailLabel: "Email",
+          contactEmailPlaceholder: "Enter Your Email",
+          contactFormNote:
+            "You can fill out this form and our team will contact you, or reach us directly via WhatsApp or phone.",
+          contactButton: "Contact Us Now",
+        },
+      };
+
+      function setLanguage(lang) {
+        const dictionary = translations[lang] || translations.id;
+        i18nElements.forEach((el) => {
+          const key = el.dataset.i18n;
+          if (key && dictionary[key]) {
+            el.textContent = dictionary[key];
+          }
+        });
+        placeholderElements.forEach((el) => {
+          const key = el.dataset.i18nPlaceholder;
+          if (key && dictionary[key]) {
+            el.placeholder = dictionary[key];
+          }
+        });
+        langButtons.forEach((button) => {
+          button.classList.toggle(
+            "bg-emerald-500",
+            button.dataset.lang === lang,
+          );
+          button.classList.toggle(
+            "text-slate-950",
+            button.dataset.lang === lang,
+          );
+          button.classList.toggle(
+            "bg-transparent",
+            button.dataset.lang !== lang,
+          );
+          button.classList.toggle(
+            "text-slate-100",
+            button.dataset.lang !== lang,
+          );
+        });
+        document.documentElement.lang = lang;
+        localStorage.setItem("preferredLang", lang);
+      }
+
+      langButtons.forEach((button) => {
+        button.addEventListener("click", () =>
+          setLanguage(button.dataset.lang),
+        );
+      });
+
+      function updateActiveNav() {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (scrollY >= sectionTop - 150) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove(
+            "text-emerald-400",
+            "font-bold",
+            "border-b-2",
+            "border-emerald-400",
+          );
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add(
+              "text-emerald-400",
+              "font-bold",
+              "border-b-2",
+              "border-emerald-400",
+            );
+          }
+        });
+      }
+
+      window.addEventListener("scroll", updateActiveNav);
+      document.addEventListener("DOMContentLoaded", () => {
+        const savedLang = localStorage.getItem("preferredLang") || "id";
+        setLanguage(savedLang);
+        updateActiveNav();
+        initHeroSlider();
+        initTestimonialSlider();
+      });
+
+      // Testimonial Slider
+      let currentSlideIndex = 0;
+      let sliderAutoPlayInterval;
+
+      function initTestimonialSlider() {
+        const slider = document.getElementById("testimonialSlider");
+        if (!slider) return;
+
+        const totalSlides = slider.children.length;
+        updateSliderPosition();
+        startAutoPlay();
+
+        // Add keyboard navigation
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowLeft") changeSlide(-1);
+          if (e.key === "ArrowRight") changeSlide(1);
+        });
+      }
+
+      function changeSlide(direction) {
+        const slider = document.getElementById("testimonialSlider");
+        if (!slider) return;
+
+        const totalSlides = slider.children.length;
+        currentSlideIndex += direction;
+
+        if (currentSlideIndex >= totalSlides) {
+          currentSlideIndex = 0;
+        } else if (currentSlideIndex < 0) {
+          currentSlideIndex = totalSlides - 1;
+        }
+
+        updateSliderPosition();
+        resetAutoPlay();
+      }
+
+      function currentSlide(index) {
+        currentSlideIndex = index;
+        updateSliderPosition();
+        resetAutoPlay();
+      }
+
+      function updateSliderPosition() {
+        const slider = document.getElementById("testimonialSlider");
+        if (!slider) return;
+
+        const offset = -currentSlideIndex * 100;
+        slider.style.transform = `translateX(${offset}%)`;
+
+        // Update dots
+        const dots = document.querySelectorAll(".slider-dot");
+        dots.forEach((dot, index) => {
+          if (index === currentSlideIndex) {
+            dot.classList.add("bg-emerald-500");
+            dot.classList.remove("bg-slate-600");
+          } else {
+            dot.classList.remove("bg-emerald-500");
+            dot.classList.add("bg-slate-600");
+          }
+        });
+      }
+
+      function startAutoPlay() {
+        sliderAutoPlayInterval = setInterval(() => {
+          changeSlide(1);
+        }, 5000);
+      }
+
+      function resetAutoPlay() {
+        clearInterval(sliderAutoPlayInterval);
+        startAutoPlay();
+      }
+
+      // Function to add/update testimonial
+      function updateTestimonial(index, name, company, text, imageUrl) {
+        document.getElementById(`name-${index}`).textContent = name;
+        document.getElementById(`company-${index}`).textContent = company;
+        document.getElementById(`text-${index}`).textContent = text;
+
+        const img = document.getElementById(`img-${index}`);
+        const placeholder = document.getElementById(`placeholder-${index}`);
+
+        if (imageUrl) {
+          img.src = imageUrl;
+          img.style.display = "block";
+          placeholder.style.display = "none";
+        } else {
+          img.style.display = "none";
+          placeholder.style.display = "flex";
+        }
+      }
+
+      // Hero Image Slider
+      let heroSlideIndex = 0;
+      let heroAutoPlayInterval;
+      const heroTotalSlides = 5;
+
+      function initHeroSlider() {
+        updateHeroSliderPosition();
+        startHeroAutoPlay();
+      }
+
+      function heroChangeSlide(direction) {
+        heroSlideIndex += direction;
+        if (heroSlideIndex >= heroTotalSlides) {
+          heroSlideIndex = 0;
+        } else if (heroSlideIndex < 0) {
+          heroSlideIndex = heroTotalSlides - 1;
+        }
+        updateHeroSliderPosition();
+        resetHeroAutoPlay();
+      }
+
+      function heroCurrentSlide(index) {
+        heroSlideIndex = index;
+        updateHeroSliderPosition();
+        resetHeroAutoPlay();
+      }
+
+      function updateHeroSliderPosition() {
+        const heroSlider = document.getElementById("heroSlider");
+        if (!heroSlider) return;
+
+        const offset = -heroSlideIndex * 100;
+        heroSlider.style.transform = `translateX(${offset}%)`;
+
+        // Update dots
+        const heroDots = document.querySelectorAll(".hero-dot");
+        heroDots.forEach((dot, index) => {
+          if (index === heroSlideIndex) {
+            dot.classList.add("bg-emerald-500", "w-3");
+            dot.classList.remove("bg-slate-400", "w-2");
+          } else {
+            dot.classList.remove("bg-emerald-500", "w-3");
+            dot.classList.add("bg-slate-400", "w-2");
+          }
+        });
+      }
+
+      function startHeroAutoPlay() {
+        heroAutoPlayInterval = setInterval(() => {
+          heroChangeSlide(1);
+        }, 4000);
+      }
+
+      function resetHeroAutoPlay() {
+        clearInterval(heroAutoPlayInterval);
+        startHeroAutoPlay();
+      }
+
+      // Example: Uncomment to add more testimonials
+      // updateTestimonial(0, "Nama Customer", "Perusahaan", "Komentar testimonial...", "path/to/image.jpg");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Project detail page" />
+    <meta name="author" content="Berpon Digital" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <style>
+      :root {
+        --primary-dark: #0f172a;
+        --secondary-dark: #1e293b;
+        --accent-green: #10b981;
+        --accent-cyan: #06d6a6;
+      }
+      body {
+        background-color: var(--primary-dark);
+        color: white;
+      }
+      .gradient {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      }
+      .gradient-bottom {
+        background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
+      }
+      section {
+        background-color: var(--primary-dark) !important;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: white !important;
+      }
+      p,
+      span,
+      label {
+        color: #cbd5e1 !important;
+      }
+      .shadow-lg {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+      }
+      input,
+      textarea {
+        background-color: #334155 !important;
+        color: #f1f5f9 !important;
+        border-color: #475569 !important;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        color: #94a3b8 !important;
+      }
+      input:focus,
+      textarea:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        border-color: #10b981 !important;
+      }
+      .text-green-700 {
+        color: var(--accent-cyan) !important;
+      }
+      .text-green-700:hover {
+        color: #3b82f6 !important;
+      }
+    </style>
+    <title>Project Detail</title>
+  </head>
+  <body>
+    <section class="gradient-bottom py-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between mb-10"
+        >
+          <a
+            href="index.html#portofolio"
+            class="inline-flex items-center gap-3 rounded-full border border-emerald-500/30 bg-slate-900/90 px-5 py-3 text-sm font-semibold text-white hover:bg-emerald-500/10 transition"
+          >
+            <i class="fas fa-arrow-left text-emerald-400"></i>
+            <span data-i18n="backToHome">Back to Home</span>
+          </a>
+          <div
+            class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 p-1"
+          >
+            <button
+              type="button"
+              class="lang-switch rounded-full px-3 py-1 text-sm font-semibold text-slate-100 bg-emerald-500"
+              data-lang="id"
+            >
+              ID
+            </button>
+            <button
+              type="button"
+              class="lang-switch rounded-full px-3 py-1 text-sm font-semibold text-slate-100"
+              data-lang="en"
+            >
+              EN
+            </button>
+          </div>
+        </div>
+
+        <div class="space-y-6 text-center mb-16">
+          <p
+            class="text-sm uppercase tracking-[0.35em] text-emerald-400"
+            id="projectTag"
+          >
+            Ming Motor | Website & System ERP
+          </p>
+          <h1
+            class="text-4xl md:text-5xl font-bold text-white"
+            id="projectTitle"
+          >
+            Supply Chain & Inventory Automation
+          </h1>
+          <p
+            class="mx-auto max-w-3xl text-lg leading-8 text-slate-300"
+            id="projectSubtitle"
+          >
+            For Efficiency and Human Error Reduction
+          </p>
+        </div>
+
+        <div class="grid gap-10 xl:grid-cols-[1.6fr_0.9fr]">
+          <div class="space-y-10">
+            <div
+              class="rounded-[2rem] border border-slate-700 bg-slate-900/95 p-8 shadow-2xl"
+            >
+              <div
+                class="mb-8 rounded-[2rem] overflow-hidden border border-slate-700 bg-slate-950"
+              >
+                <img
+                  id="projectImage"
+                  src="img/kerja1.jpg"
+                  alt="Project preview"
+                  class="w-full object-cover"
+                />
+              </div>
+              <div class="grid gap-6 lg:grid-cols-2">
+                <div
+                  class="rounded-[1.8rem] border border-slate-700 bg-slate-900/95 p-6"
+                >
+                  <h2
+                    class="text-xl font-semibold text-white mb-4"
+                    data-i18n="overviewTitle"
+                  >
+                    Overview
+                  </h2>
+                  <p class="text-slate-300 leading-7" id="projectOverview">
+                    Ming Motor is a prominent automotive spare parts retailer.
+                    They manage a high-volume daily inventory to support both
+                    wholesale and retail sales, as well as integrated motorcycle
+                    maintenance services.
+                  </p>
+                </div>
+                <div
+                  class="rounded-[1.8rem] border border-slate-700 bg-slate-900/95 p-6"
+                >
+                  <h2
+                    class="text-xl font-semibold text-white mb-4"
+                    data-i18n="challengesTitle"
+                  >
+                    Challenges
+                  </h2>
+                  <p class="text-slate-300 leading-7" id="projectChallenges">
+                    Ming Motor faced significant operational hurdles, including
+                    inventory shrinkage, inconsistent data, and a manual pricing
+                    system that relied on staff memory. This manual-heavy
+                    workflow led to frequent sales errors and increased the risk
+                    of operational losses.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="rounded-[2rem] border border-slate-700 bg-slate-900/95 p-8 shadow-2xl"
+            >
+              <h2
+                class="text-xl font-semibold text-white mb-6"
+                data-i18n="solutionsTitle"
+              >
+                Solutions
+              </h2>
+              <p class="text-slate-300 leading-7" id="projectSolutions">
+                We designed a web-based Supply Chain Management (SCM) system
+                that integrates the entire goods flow in real-time. Featuring an
+                Automated Report Dashboard and Barcode Scanner Integration, this
+                system minimizes human errors, ensures 100% stock data accuracy,
+                and accelerates in-store transaction processes.
+              </p>
+            </div>
+          </div>
+
+          <aside
+            class="rounded-[2rem] border border-slate-700 bg-slate-900/95 p-8 shadow-2xl"
+          >
+            <div class="mb-10">
+              <h2
+                class="text-2xl font-semibold text-white mb-4"
+                data-i18n="projectDetailsTitle"
+              >
+                Project Details
+              </h2>
+              <div class="space-y-6">
+                <div>
+                  <p
+                    class="text-sm uppercase tracking-[0.2em] text-slate-400"
+                    data-i18n="clientLabel"
+                  >
+                    Client :
+                  </p>
+                  <p
+                    class="mt-2 text-lg font-semibold text-white"
+                    id="projectClient"
+                  >
+                    Ming Motor
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="text-sm uppercase tracking-[0.2em] text-slate-400"
+                    data-i18n="yearLabel"
+                  >
+                    Year :
+                  </p>
+                  <p
+                    class="mt-2 text-lg font-semibold text-white"
+                    id="projectYear"
+                  >
+                    2024
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="text-sm uppercase tracking-[0.2em] text-slate-400"
+                    data-i18n="serviceLabel"
+                  >
+                    Service :
+                  </p>
+                  <p
+                    class="mt-2 text-lg font-semibold text-white"
+                    id="projectService"
+                  >
+                    Website & System ERP
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="text-sm uppercase tracking-[0.2em] text-slate-400"
+                    data-i18n="categoryLabel"
+                  >
+                    Category :
+                  </p>
+                  <p
+                    class="mt-2 text-lg font-semibold text-white"
+                    id="projectCategory"
+                  >
+                    Supply Chain
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a
+              href="index.html#portofolio"
+              class="inline-flex w-full items-center justify-center rounded-full bg-emerald-500 px-6 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-600"
+              data-i18n="backToHomeButton"
+            >
+              Back to Home
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const langButtons = document.querySelectorAll(".lang-switch");
+      const i18nElements = document.querySelectorAll("[data-i18n]");
+      const translations = {
+        id: {
+          backToHome: "Kembali ke Beranda",
+          projectTag: "Ming Motor | Website & System ERP",
+          overviewTitle: "Overview",
+          challengesTitle: "Challenges",
+          solutionsTitle: "Solutions",
+          projectDetailsTitle: "Project Details",
+          clientLabel: "Client :",
+          yearLabel: "Year :",
+          serviceLabel: "Service :",
+          categoryLabel: "Category :",
+          backToHomeButton: "Kembali ke Beranda",
+        },
+        en: {
+          backToHome: "Back to Home",
+          projectTag: "Ming Motor | Website & System ERP",
+          overviewTitle: "Overview",
+          challengesTitle: "Challenges",
+          solutionsTitle: "Solutions",
+          projectDetailsTitle: "Project Details",
+          clientLabel: "Client :",
+          yearLabel: "Year :",
+          serviceLabel: "Service :",
+          categoryLabel: "Category :",
+          backToHomeButton: "Back to Home",
+        },
+      };
+
+      const projectData = {
+        "ming-motor": {
+          image: "img/inventory.png",
+          id: {
+            title: "Sistem Inventory",
+            subtitle: "Untuk Memantau Stok Barang dengan Efisien",
+            overview:
+              "Sistem Inventory adalah solusi manajemen stok yang dirancang untuk memantau ketersediaan barang secara real-time, memastikan efisiensi operasional dan mengurangi kekurangan atau kelebihan stok.",
+            challenges:
+              "Banyak perusahaan mengalami kesulitan dalam pencatatan stok manual, inkonsistensi data, dan kesulitan melacak barang yang ada. Hal ini menyebabkan keterlambatan dalam proses pengiriman dan kehilangan penjualan.",
+            solutions:
+              "Kami membangun sistem inventory berbasis digital dengan fitur tracking otomatis, notifikasi stok rendah, laporan analitik real-time, dan integrasi dengan sistem penjualan untuk manajemen yang lebih efisien.",
+            client: "Ming Motor",
+            year: "2024",
+            service: "Inventory Management System",
+            category: "Supply Chain",
+          },
+          en: {
+            title: "Inventory System",
+            subtitle: "To Monitor Stock Items Efficiently",
+            overview:
+              "Inventory System is a stock management solution designed to monitor product availability in real-time, ensuring operational efficiency and reducing stockouts or overstock situations.",
+            challenges:
+              "Many companies struggle with manual stock records, data inconsistency, and difficulty tracking items. This leads to shipping delays and lost sales.",
+            solutions:
+              "We built a digital inventory system with automatic tracking, low stock alerts, real-time analytics reporting, and integration with sales systems for more efficient management.",
+            client: "Ming Motor",
+            year: "2024",
+            service: "Inventory Management System",
+            category: "Supply Chain",
+          },
+        },
+        perpustakaan: {
+          image: "img/web expor.png",
+          id: {
+            title: "Betel Nut Exporter",
+            subtitle: "Website untuk Perusahaan Eksportir Betel Nut",
+            overview:
+              "Website Betel Nut Exporter adalah platform online yang dirancang khusus untuk memudahkan perusahaan eksportir betel nut dalam menampilkan produk, mengelola pesanan, dan berkomunikasi dengan pembeli internasional.",
+            challenges:
+              "Perusahaan eksportir betel nut membutuhkan platform yang dapat memamerkan produk berkualitas tinggi, mengelola transaksi ekspor, dan membangun kepercayaan dengan pembeli global. Sistem tradisional tidak cukup efektif.",
+            solutions:
+              "Kami mengembangkan website eksportir dengan katalog produk interaktif, sistem manajemen pesanan, fitur pembayaran teraman, dan integrasi logistik untuk mendukung operasional ekspor yang lancar dan profesional.",
+            client: "Betel Nut Company",
+            year: "2024",
+            service: "Export Website Platform",
+            category: "E-Commerce",
+          },
+          en: {
+            title: "Betel Nut Exporter",
+            subtitle: "Website for Betel Nut Exporting Companies",
+            overview:
+              "Betel Nut Exporter website is an online platform specifically designed to help betel nut exporting companies showcase their products, manage orders, and communicate with international buyers.",
+            challenges:
+              "Betel nut exporting companies need a platform to showcase high-quality products, manage export transactions, and build trust with global buyers. Traditional systems are not effective enough.",
+            solutions:
+              "We developed an exporter website with interactive product catalogs, order management systems, secure payment features, and logistics integration to support smooth and professional export operations.",
+            client: "Betel Nut Company",
+            year: "2024",
+            service: "Export Website Platform",
+            category: "E-Commerce",
+          },
+        },
+        keuangan: {
+          image: "img/Tokooline.png",
+          id: {
+            title: "Biak Dagang",
+            subtitle: "Aplikasi E-commerce untuk Toko Online",
+            overview:
+              "Biak Dagang adalah aplikasi e-commerce lengkap yang memungkinkan pemilik toko untuk mengelola produk, pesanan, pembayaran, dan pengiriman dalam satu platform terintegrasi yang mudah digunakan.",
+            challenges:
+              "Pemilik toko online menghadapi kesulitan dalam mengelola berbagai aspek bisnis seperti katalog produk yang besar, proses checkout yang rumit, dan integrasi dengan berbagai metode pembayaran dan pengiriman.",
+            solutions:
+              "Kami mengembangkan platform e-commerce dengan dashboard manajemen produk yang intuitif, sistem pembayaran terintegrasi, otomasi pesanan, dan tracking pengiriman real-time untuk memaksimalkan penjualan dan kepuasan pelanggan.",
+            client: "Biak Dagang",
+            year: "2024",
+            service: "E-Commerce Platform",
+            category: "Retail",
+          },
+          en: {
+            title: "Biak Dagang",
+            subtitle: "E-commerce Application for Online Stores",
+            overview:
+              "Biak Dagang is a complete e-commerce application that allows store owners to manage products, orders, payments, and shipping in one integrated, easy-to-use platform.",
+            challenges:
+              "Online store owners struggle with managing various business aspects such as large product catalogs, complex checkout processes, and integration with various payment and shipping methods.",
+            solutions:
+              "We developed an e-commerce platform with an intuitive product management dashboard, integrated payment systems, order automation, and real-time shipping tracking to maximize sales and customer satisfaction.",
+            client: "Biak Dagang",
+            year: "2024",
+            service: "E-Commerce Platform",
+            category: "Retail",
+          },
+        },
+        asset: {
+          image: "img/Hidroponik.png",
+          id: {
+            title: "Hidroponik Expert",
+            subtitle: "Aplikasi untuk Memantau Pertumbuhan Tanaman Hidroponik",
+            overview:
+              "Hidroponik Expert adalah aplikasi khusus yang dirancang untuk membantu petani hidroponik memantau pertumbuhan tanaman, mengelola nutrisi, pencahayaan, dan berbagai parameter lingkungan untuk hasil panen optimal.",
+            challenges:
+              "Petani hidroponik membutuhkan monitoring konstan terhadap kondisi tanaman, pH air, nutrisi, dan suhu. Sistem manual sangat memakan waktu dan rawan kesalahan yang dapat merugikan hasil panen.",
+            solutions:
+              "Kami membangun aplikasi hidroponik dengan sensor monitoring otomatis, dashboard real-time, alert notifikasi untuk kondisi abnormal, dan rekomendasi nutrisi berbasis AI untuk memaksimalkan produktivitas tanaman.",
+            client: "Hidroponik Expert",
+            year: "2024",
+            service: "Agricultural Monitoring System",
+            category: "Agriculture",
+          },
+          en: {
+            title: "Hydroponics Expert",
+            subtitle: "Application to Monitor Hydroponic Plant Growth",
+            overview:
+              "Hydroponics Expert is a specialized application designed to help hydroponic farmers monitor plant growth, manage nutrients, lighting, and various environmental parameters for optimal harvest results.",
+            challenges:
+              "Hydroponic farmers require constant monitoring of plant conditions, water pH, nutrients, and temperature. Manual systems are time-consuming and error-prone, which can harm harvest results.",
+            solutions:
+              "We built a hydroponic application with automatic sensor monitoring, real-time dashboards, abnormal condition alerts, and AI-based nutrient recommendations to maximize plant productivity.",
+            client: "Hydroponics Expert",
+            year: "2024",
+            service: "Agricultural Monitoring System",
+            category: "Agriculture",
+          },
+        },
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const projectKey = params.get("project") || "ming-motor";
+      const selectedProject =
+        projectData[projectKey] || projectData["ming-motor"];
+
+      function applyTranslations(lang) {
+        const dictionary = translations[lang] || translations.id;
+        i18nElements.forEach((el) => {
+          const key = el.dataset.i18n;
+          if (key && dictionary[key]) {
+            el.textContent = dictionary[key];
+          }
+        });
+        langButtons.forEach((button) => {
+          const active = button.dataset.lang === lang;
+          button.classList.toggle("bg-emerald-500", active);
+          button.classList.toggle("text-slate-950", active);
+          button.classList.toggle("bg-transparent", !active);
+          button.classList.toggle("text-slate-100", !active);
+        });
+        document.documentElement.lang = lang;
+        localStorage.setItem("preferredLang", lang);
+      }
+
+      function applyProjectContent(lang) {
+        const projectContent = selectedProject[lang] || selectedProject.id;
+        document.getElementById("projectTitle").textContent =
+          projectContent.title;
+        document.getElementById("projectSubtitle").textContent =
+          projectContent.subtitle;
+        document.getElementById("projectOverview").textContent =
+          projectContent.overview;
+        document.getElementById("projectChallenges").textContent =
+          projectContent.challenges;
+        document.getElementById("projectSolutions").textContent =
+          projectContent.solutions;
+        document.getElementById("projectClient").textContent =
+          projectContent.client;
+        document.getElementById("projectYear").textContent =
+          projectContent.year;
+        document.getElementById("projectService").textContent =
+          projectContent.service;
+        document.getElementById("projectCategory").textContent =
+          projectContent.category;
+        document.getElementById("projectImage").src = selectedProject.image;
+        document.getElementById("projectTag").textContent =
+          projectContent.tag ||
+          projectContent.client + " | Website & System ERP";
+      }
+
+      langButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const lang = button.dataset.lang;
+          applyTranslations(lang);
+          applyProjectContent(lang);
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const savedLang = localStorage.getItem("preferredLang") || "id";
+        applyTranslations(savedLang);
+        applyProjectContent(savedLang);
+      });
+    </script>
+  </body>
+</html>
