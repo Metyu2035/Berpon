@@ -3,11 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Berpon Digital</title>
-    <meta name="description" content="Web portofolio tailwind" />
-    <meta name="keyword" content="tailwindcss, CSS, tailwind" />
+    <title>Berpon Digital | Web & Solusi Digital untuk UMKM</title>
+    <meta
+      name="description"
+      content="Berpon Digital membantu UMKM membangun website modern, sistem digital, dan pengalaman online profesional untuk meningkatkan visibilitas, konversi, dan pertumbuhan bisnis."
+    />
+    <meta
+      name="keywords"
+      content="Berpon Digital, jasa website, desain UI UX, solusi digital, UMKM, portofolio digital"
+    />
     <meta name="author" content="Berpon Digital" />
-    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://berpon.vercel.app/" />
+
+    <link rel="icon" href="inicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="inicon.svg" />
+
+    <meta
+      property="og:title"
+      content="Berpon Digital | Web & Solusi Digital untuk UMKM"
+    />
+    <meta
+      property="og:description"
+      content="Berpon Digital membantu UMKM membangun website modern, sistem digital, dan pengalaman online profesional untuk meningkatkan visibilitas, konversi, dan pertumbuhan bisnis."
+    />
+    <meta
+      property="og:image"
+      content="https://berpon.vercel.app/img/thumbnail.png"
+    />
+    <meta property="og:url" content="https://berpon.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Berpon Digital" />
+    <meta property="og:locale" content="id_ID" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Berpon Digital | Web & Solusi Digital untuk UMKM"
+    />
+    <meta
+      name="twitter:description"
+      content="Berpon Digital membantu UMKM membangun website modern, sistem digital, dan pengalaman online profesional untuk meningkatkan visibilitas, konversi, dan pertumbuhan bisnis."
+    />
+    <meta
+      name="twitter:image"
+      content="https://berpon.vercel.app/img/thumbnail.png"
+    />
+    <meta name="twitter:url" content="https://berpon.vercel.app/" />
+    <meta name="twitter:site" content="@berpon" />
+    <meta name="twitter:creator" content="@berpon" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -140,43 +187,50 @@
         background-color: var(--secondary-dark) !important;
       }
     </style>
-    <title>Berpon Digital</title>
   </head>
   <body>
     <!-- Sticky Navbar -->
     <nav
       class="sticky top-0 z-50 bg-slate-900 shadow-md border-b border-slate-700"
     >
-      <div class="flex flex-wrap p-6 justify-between max-w-full mx-auto px-4">
-        <div class="flex shrink-0 mr-6">
-          <img
-            src="img/logo1.png"
-            alt="Berpon Digital"
-            class="h-12 w-auto mr-2"
-          />
+      <div
+        class="flex items-center justify-between gap-6 px-6 py-8 max-w-7xl mx-auto"
+      >
+        <div class="flex items-center gap-3">
+          <img src="img/logo1.png" alt="Berpon Digital" class="h-12 w-auto" />
+          <span
+            class="hidden text-white text-sm font-bold tracking-[0.18em] uppercase md:inline"
+            >Berpon Digital</span
+          >
         </div>
-        <div class="flex items-center space-x-6">
+
+        <div class="hidden md:flex md:items-center md:gap-12">
           <a
             href="#about"
-            class="nav-link text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
+            class="nav-link px-4 py-2 text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
             data-i18n="navAbout"
             >About</a
           >
           <a
             href="#portofolio"
-            class="nav-link text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
+            class="nav-link px-4 py-2 text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
             data-i18n="navPortfolio"
             >Portofolio</a
           >
           <a
             href="#testimonials"
-            class="nav-link text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
+            class="nav-link px-4 py-2 text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
             data-i18n="navTestimonials"
             >Testimonials</a
           >
+        </div>
+
+        <div
+          class="hidden md:flex md:items-center md:justify-end md:gap-6 md:flex-1 md:pl-12"
+        >
           <a
             href="#contact"
-            class="inline-block text-sm px-4 py-2 text-white bg-emerald-500 border border-transparent hover:bg-emerald-600 rounded-tr-lg rounded-full transition-colors font-bold"
+            class="inline-flex justify-center rounded-full bg-emerald-500 px-5 py-2 text-sm font-bold text-slate-950 transition hover:bg-emerald-600"
             data-i18n="navContact"
             >Contact</a
           >
@@ -185,14 +239,75 @@
           >
             <button
               type="button"
-              class="lang-switch rounded-full px-3 py-1 text-sm font-semibold text-slate-100 bg-emerald-500"
+              class="lang-switch inline-flex h-9 w-12 items-center justify-center rounded-full px-3 py-1 text-sm font-semibold text-slate-100 bg-emerald-500"
               data-lang="id"
             >
               ID
             </button>
             <button
               type="button"
-              class="lang-switch rounded-full px-3 py-1 text-sm font-semibold text-slate-100"
+              class="lang-switch inline-flex h-9 w-12 items-center justify-center rounded-full px-3 py-1 text-sm font-semibold text-slate-100"
+              data-lang="en"
+            >
+              EN
+            </button>
+          </div>
+        </div>
+
+        <button
+          id="mobileMenuButton"
+          type="button"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-slate-700 text-slate-200 hover:bg-slate-800 focus:outline-none lg:hidden"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fas fa-th-large text-lg"></i>
+        </button>
+      </div>
+
+      <div
+        id="mobileMenu"
+        class="hidden w-full lg:hidden bg-slate-900 px-4 pb-4"
+      >
+        <div class="flex flex-col gap-3 py-4 border-t border-slate-700">
+          <a
+            href="#about"
+            class="nav-link px-4 py-2 text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
+            data-i18n="navAbout"
+            >About</a
+          >
+          <a
+            href="#portofolio"
+            class="nav-link px-4 py-2 text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
+            data-i18n="navPortfolio"
+            >Portofolio</a
+          >
+          <a
+            href="#testimonials"
+            class="nav-link px-4 py-2 text-slate-300 hover:text-emerald-400 text-lg font-medium transition-colors"
+            data-i18n="navTestimonials"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="inline-flex w-full justify-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-bold text-slate-950 transition hover:bg-emerald-600"
+            data-i18n="navContact"
+            >Contact</a
+          >
+          <div
+            class="flex w-full items-center gap-2 border border-slate-700 rounded-full bg-slate-900/80 p-2"
+          >
+            <button
+              type="button"
+              class="lang-switch flex-1 h-9 items-center justify-center rounded-full text-sm font-semibold text-slate-100 bg-emerald-500"
+              data-lang="id"
+            >
+              ID
+            </button>
+            <button
+              type="button"
+              class="lang-switch flex-1 h-9 items-center justify-center rounded-full text-sm font-semibold text-slate-100"
               data-lang="en"
             >
               EN
@@ -209,12 +324,6 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] items-center">
           <div class="space-y-8">
-            <span
-              class="inline-flex items-center rounded-full bg-emerald-500/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.35em] text-emerald-300"
-              data-i18n="aboutBadge"
-            >
-              Tentang Kami
-            </span>
             <h1
               class="text-5xl md:text-6xl font-bold leading-tight tracking-tight"
               data-i18n="heroTitle"
@@ -249,22 +358,6 @@
               >
                 Portofolio
               </a>
-            </div>
-            <div class="flex flex-wrap gap-3">
-              <span
-                class="inline-flex items-center gap-2 rounded-full bg-slate-900/80 px-4 py-2 text-sm font-medium text-slate-100"
-                data-i18n="heroBadge1"
-              >
-                <i class="fab fa-whatsapp text-emerald-400"></i>
-                Chat via WhatsApp
-              </span>
-              <span
-                class="inline-flex items-center gap-2 rounded-full bg-slate-900/80 px-4 py-2 text-sm font-medium text-slate-100"
-                data-i18n="heroBadge2"
-              >
-                <i class="fas fa-check-circle text-emerald-400"></i>
-                Terpercaya oleh UMKM
-              </span>
             </div>
           </div>
 
@@ -344,51 +437,6 @@
                   class="hero-dot w-2 h-2 rounded-full bg-slate-400 cursor-pointer transition-all"
                   onclick="heroCurrentSlide(4)"
                 ></button>
-              </div>
-            </div>
-
-            <div
-              class="absolute top-6 left-6 rounded-3xl border border-emerald-500/20 bg-slate-900/90 p-4 shadow-xl backdrop-blur"
-            >
-              <div class="flex items-center gap-3 text-slate-100">
-                <div
-                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500/10 text-emerald-400"
-                >
-                  <i class="fas fa-paint-brush"></i>
-                </div>
-                <div>
-                  <p
-                    class="text-xs uppercase tracking-[0.35em] text-slate-400"
-                    data-i18n="cardBadge1"
-                  >
-                    Desain UI/UX
-                  </p>
-                  <p class="font-semibold" data-i18n="cardTitle1">
-                    Konsep Kreatif
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="absolute bottom-8 right-6 rounded-3xl border border-emerald-500/20 bg-slate-900/90 p-4 shadow-xl backdrop-blur"
-            >
-              <div class="flex items-center gap-3 text-slate-100">
-                <div
-                  class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500/10 text-emerald-400"
-                >
-                  <i class="fas fa-code"></i>
-                </div>
-                <div>
-                  <p
-                    class="text-xs uppercase tracking-[0.35em] text-slate-400"
-                    data-i18n="cardBadge2"
-                  >
-                    Pengembangan Web
-                  </p>
-                  <p class="font-semibold" data-i18n="cardTitle2">
-                    Antarmuka Modern
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -740,10 +788,7 @@
               <p
                 class="text-slate-300 leading-7 mb-5"
                 data-i18n="contactPhoneDesc"
-              >
-                Anda dapat menghubungi kami selama 24/7 melalui WhatsApp dibawah
-                ini, dapatkan konsultasi gratis bersama Berpon Digital.
-              </p>
+              ></p>
               <div class="flex items-center gap-4 text-slate-100">
                 <span
                   class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-lime-300 bg-lime-500/10 text-lime-300"
@@ -764,10 +809,7 @@
               <p
                 class="text-slate-300 leading-7 mb-5"
                 data-i18n="contactEmailDesc"
-              >
-                Anda dapat menghubungi kami melalui alamat email yang tertara
-                dibawah ini, dapatkan konsultasi gratis bersama Berpon Digital.
-              </p>
+              ></p>
               <div class="flex items-center gap-4 text-slate-100">
                 <span
                   class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-lime-300 bg-lime-500/10 text-lime-300"
@@ -775,7 +817,7 @@
                   <i class="fas fa-envelope text-lg"></i>
                 </span>
                 <span class="text-lg font-semibold"
-                  >berpon.digital@gmail.com</span
+                  >berpondigital@gmail.com</span
                 >
               </div>
             </div>
@@ -790,10 +832,7 @@
               <p
                 class="text-slate-300 leading-7 mb-5"
                 data-i18n="contactInstagramDesc"
-              >
-                Anda dapat menghubungi kami melalui Instagram yang tertara
-                dibawah ini, dapatkan konsultasi gratis bersama Berpon Digital.
-              </p>
+              ></p>
               <div class="flex items-center gap-4 text-slate-100">
                 <span
                   class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-lime-300 bg-lime-500/10 text-lime-300"
@@ -867,7 +906,7 @@
                   type="button"
                   onclick="
                     window.open(
-                      'https://wa.me/6281344004046?text=Halo%20Berpon%20Digital%2C%20saya%20ingin%20konsultasi%20tentang%20bisnis%20saya.',
+                      'https://wa.me/6281344004046?text=Halo%20Berpon%20Digital%2C%20saya%20ingin%20konsultasi.',
                       '_blank',
                     )
                   "
@@ -914,7 +953,7 @@
           <i class="fa-2x fab fa-instagram"></i>
         </a>
         <a
-          href="mailto:berpon.digital@gmail.com"
+          href="mailto:berpondigital@gmail.com"
           class="text-green-700 hover:text-green-500 p-2 m-3"
           title="Kirim Email"
         >
@@ -932,10 +971,51 @@
       const navLinks = document.querySelectorAll(".nav-link");
       const sections = document.querySelectorAll("section[id]");
       const langButtons = document.querySelectorAll(".lang-switch");
+      const mobileMenuButton = document.getElementById("mobileMenuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
       const i18nElements = document.querySelectorAll("[data-i18n]");
       const placeholderElements = document.querySelectorAll(
         "[data-i18n-placeholder]",
       );
+
+      if (mobileMenuButton && mobileMenu) {
+        const closeMobileMenu = () => {
+          if (!mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.add("hidden");
+            mobileMenuButton.setAttribute("aria-expanded", "false");
+            const menuIcon = mobileMenuButton.querySelector("i");
+            if (menuIcon) {
+              menuIcon.classList.add("fa-bars");
+              menuIcon.classList.remove("fa-times");
+            }
+          }
+        };
+
+        mobileMenuButton.addEventListener("click", () => {
+          const expanded =
+            mobileMenuButton.getAttribute("aria-expanded") === "true";
+          mobileMenuButton.setAttribute("aria-expanded", String(!expanded));
+          mobileMenu.classList.toggle("hidden");
+
+          const menuIcon = mobileMenuButton.querySelector("i");
+          if (menuIcon) {
+            menuIcon.classList.toggle("fa-bars");
+            menuIcon.classList.toggle("fa-times");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            closeMobileMenu();
+          });
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth >= 768) {
+            closeMobileMenu();
+          }
+        });
+      }
 
       const translations = {
         id: {
@@ -948,7 +1028,7 @@
           heroTitle: "Solusi Digital Inovatif",
           heroTitleHighlight: "solusi digital",
           heroDescription:
-            "Menciptakan pengalaman digital yang bermakna melalui desain yang matang dan solusi inovatif. Kami memadukan kreativitas dengan strategi untuk menghidupkan merek dan menjangkau audiens secara lebih dalam.",
+            "Jasa Pembuatan website. Memberikan solusi inovatif untuk Anda.",
           heroCta1: "Konsultasi Gratis",
           heroCta2: "Portofolio",
           heroBadge1: "Chat via WhatsApp",
@@ -969,61 +1049,14 @@
           detailButton: "Detail",
           portfolioTitle: "Portofolio",
           portfolioDescription:
-            "Berikut adalah beberapa proyek terbaru kami yang menunjukkan kualitas desain dan teknis yang kami kerjakan.",
+            "Berikut adalah beberapa proyek terbaru kami yang menunjukkan kualitas Website dan Masalah teknis yang kami kerjakan.",
           testimonialsTitle: "Testimonials",
           testimonialsDescription: "Apa kata klien kami tentang layanan kami",
-          pricingTitle: "Pricelist",
-          pricingDescription:
-            "Pilih paket yang sesuai dengan kebutuhan bisnis Anda",
-          starterBadge: "30% OFF",
-          starterTitle: "Starter",
-          starterDescription:
-            "Sempurna untuk usaha baru, personal branding, atau memulai kehadiran online Anda",
-          pricingNote:
-            "* Harga dapat bervariasi sesuai kebutuhan spesifik Anda",
-          starterFeature1: "Responsive web design (Desktop dan Mobile)",
-          starterFeature2: "1 Landing Page",
-          starterFeature3: "Basic SEO setup",
-          starterFeature4: "Free website security (SSL)",
-          starterFeature5: "Free 14-day maintenance",
-          starterFeature6: "Free hosting and domain for 6 months",
-          starterFeature7: "1-time revision",
-          pricingButton: "Hubungi Kami",
-          businessBadge: "🔥 Best Offers",
-          businessDiscount: "45% OFF",
-          businessTitle: "Business",
-          businessDescription:
-            "Ideal untuk usaha yang sudah berjalan dan ingin meningkatkan kredibilitas serta menarik lebih banyak pelanggan",
-          businessFeature1: "Semua fitur di Starter",
-          businessFeature2: "Portfolio gallery dan testimonial",
-          businessFeature3: "3-4 Pages (About, Contact, Service, Portfolio)",
-          businessFeature4: "Free 30-day maintenance",
-          businessFeature5: "Premium design dengan high-converting CTA buttons",
-          businessFeature6: "On-page SEO untuk setiap halaman",
-          businessFeature7: "3-time revisions",
-          allInOneBadge: "50% OFF",
-          allInOneTitle: "All-in-One",
-          allInOneDescription:
-            "Terbaik untuk bisnis yang membutuhkan fitur booking, online sales, dan internal systems",
-          allInOneFeature1: "Semua fitur di Business",
-          allInOneFeature2:
-            "6-8 Pages (Career, Articles, Cart, Custom Requests)",
-          allInOneFeature3: "Custom scroll animations",
-          allInOneFeature4:
-            "Booking forms, calendars, dan payment gateway integration",
-          allInOneFeature5: "Free 60-day maintenance",
-          allInOneFeature6: "Product catalog untuk up to 50 items",
-          allInOneFeature7: "5-time revisions",
+
           contactTitle: "Kontak Kami",
           contactPhoneTitle: "Nomor Telepon",
-          contactPhoneDesc:
-            "Anda dapat menghubungi kami selama 24/7 melalui WhatsApp dibawah ini, dapatkan konsultasi gratis bersama Berpon Digital.",
           contactEmailTitle: "Alamat Email",
-          contactEmailDesc:
-            "Anda dapat menghubungi kami melalui alamat email yang tertara dibawah ini, dapatkan konsultasi gratis bersama Berpon Digital.",
           contactInstagramTitle: "Instagram",
-          contactInstagramDesc:
-            "Anda dapat menghubungi kami melalui Instagram yang tertara dibawah ini, dapatkan konsultasi gratis bersama Berpon Digital.",
           contactHeroTitle: "Optimasi bisnis anda melalui",
           contactHeroBrand: "Berpon Digital.",
           contactHeroSubtitle: "After Sales Support",
@@ -1045,7 +1078,7 @@
           heroTitle: "Digital Innovative Solutions",
           heroTitleHighlight: "Software Development",
           heroDescription:
-            "Crafting meaningful digital experiences through thoughtful design and innovative solutions. We blend creativity with strategy to bring brands to life and connect with audiences on a deeper level.",
+            "Website creation services. Providing innovative solutions for you.",
           heroCta1: "Free Consultation",
           heroCta2: "Portfolio",
           heroBadge1: "Chat via WhatsApp",
@@ -1067,61 +1100,17 @@
           detailButton: "Details",
           portfolioTitle: "Portfolio",
           portfolioDescription:
-            "Here are some of our latest projects that show the quality of design and technical work we deliver.",
+            "Here are some of our latest projects that show the project website and technical work we deliver.",
           testimonialsTitle: "Testimonials",
           testimonialsDescription: "What our clients say about our service",
           pricingTitle: "Pricing",
           pricingDescription:
             "Choose the package that fits your business needs",
-          starterBadge: "30% OFF",
-          starterTitle: "Starter",
-          starterDescription:
-            "Perfect for new businesses, personal branding, or launching your online presence.",
-          pricingNote:
-            "* Prices may vary based on your specific business needs.",
-          starterFeature1: "Responsive web design (Desktop and Mobile)",
-          starterFeature2: "1 Landing Page",
-          starterFeature3: "Basic SEO setup",
-          starterFeature4: "Free website security (SSL)",
-          starterFeature5: "Free 14-day maintenance",
-          starterFeature6: "Free hosting and domain for 6 months",
-          starterFeature7: "1-time revision",
-          pricingButton: "Contact Us",
-          businessBadge: "🔥 Best Offers",
-          businessDiscount: "45% OFF",
-          businessTitle: "Business",
-          businessDescription:
-            "Ideal for established businesses looking to increase credibility and attract more customers.",
-          businessFeature1: "Everything in Starter",
-          businessFeature2: "Portfolio gallery and testimonials",
-          businessFeature3: "3-4 Pages (About, Contact, Service, Portfolio)",
-          businessFeature4: "Free 30-day maintenance",
-          businessFeature5: "Premium design with high-converting CTA buttons",
-          businessFeature6: "On-page SEO for every page",
-          businessFeature7: "3-time revisions",
-          allInOneBadge: "50% OFF",
-          allInOneTitle: "All-in-One",
-          allInOneDescription:
-            "Best for businesses requiring booking features, online sales, and internal systems.",
-          allInOneFeature1: "Everything in Business",
-          allInOneFeature2:
-            "6-8 Pages (Career, Articles, Cart, Custom Requests)",
-          allInOneFeature3: "Custom scroll animations",
-          allInOneFeature4:
-            "Booking forms, calendars, and payment gateway integration",
-          allInOneFeature5: "Free 60-day maintenance",
-          allInOneFeature6: "Product catalog for up to 50 items",
-          allInOneFeature7: "5-time revisions",
+
           contactTitle: "Contact Us",
           contactPhoneTitle: "Phone Number",
-          contactPhoneDesc:
-            "You can reach us 24/7 via WhatsApp below and get a free consultation with Berpon Digital.",
           contactEmailTitle: "Email Address",
-          contactEmailDesc:
-            "You can reach us via the email address below and get a free consultation with Berpon Digital.",
           contactInstagramTitle: "Instagram",
-          contactInstagramDesc:
-            "You can reach us via the Instagram account below and get a free consultation with Berpon Digital.",
           contactHeroTitle: "Optimize your business with",
           contactHeroBrand: "Berpon Digital.",
           contactHeroSubtitle: "After Sales Support",
